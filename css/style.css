@@ -1,0 +1,73 @@
+body{
+    background: hsl(220, 15%, 55%);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.principal {
+    width: 100%vh;
+    height: 100vh;
+    background: hsl(212, 45%, 89%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    display: grid;
+    grid-template-areas: 
+        "imagem"
+        "texto";
+    grid-template-columns: auto;
+    grid-template-rows: 60% 40%;
+    border-radius: 1rem;
+    width: 25%;
+    height: 80%;
+    background: hsl(0, 0%, 100%);
+}
+
+.imagem {
+    display: flex;
+    grid-area: imagem;
+    align-items: center;
+    justify-content: center;
+}
+
+.foto {
+    width: 90%;
+    height: 90%;
+    align-self: center;
+    border-radius: .8rem;
+}
+
+.texto {
+    grid-area: texto;
+    grid-column: 1 / 2;
+    grid-row: 2 / 2;
+    display: grid;
+    grid-template-areas: 
+        "titulo"
+        "paragrafo";
+    grid-template-columns: auto;
+    grid-template-rows: 40% auto;
+    padding: 5px;
+}
+
+.inicio {
+    grid-area: titulo;
+    color: hsl(218, 44%, 22%);
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    text-align: center;
+    padding: 0px 5px 5px;
+}
+
+.conteudo {
+    grid-area: paragrafo;
+    grid-column: 1 / 2;
+    grid-row: 2 / 2;
+    font-size: 15px;
+    font-weight: 400px;
+    color: hsl(220, 15%, 55%);
+    padding: 0px 5px 5px 2px;
+    text-align: center;
+}
